@@ -1,0 +1,31 @@
+(defvar instr)
+(princ "Enter your string : ")
+(setq instr(read-line))
+
+(with-open-file (input "input.txt" :if-does-not-exist :error)
+   (format t "Your paragraph~%")
+   (loop for line = (read-line input nil)
+      while line 
+        do( loop for pr being line
+            do(colloect pr)
+          )  
+   )   
+   (princ instr)
+)
+
+
+
+;(write (string= "this is test" "This is test"));
+(defvar str)
+(defvar i)
+(defvar len)
+(setq str '(Books are our real friends. They are our guides.We can learn everything from them.))
+
+(loop for s in str
+    do(if(string=  )
+    )
+) 
+    
+
+    
+
